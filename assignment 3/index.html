@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Management System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-blue-700 text-white p-4 shadow-md">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <h1 class="text-2xl font-bold">Hospital Management</h1>
+      <ul class="flex gap-4 mt-2 md:mt-0">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="text-center py-20 px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-700">Welcome to Our Hospital</h2>
+    <p class="mt-4 text-gray-600 text-lg">Efficient, Secure, and Easy to Manage</p>
+  </section>
+
+  <section class="max-w-md mx-auto bg-white p-6 md:p-8 rounded shadow-md">
+    <h3 class="text-xl font-semibold mb-4 text-center">Login</h3>
+    <form onsubmit="login(event)" class="space-y-4">
+      <div>
+        <label class="block mb-1">Username</label>
+        <input id="username" type="text" class="w-full px-4 py-2 border rounded" required />
+      </div>
+      <div>
+        <label class="block mb-1">Password</label>
+        <input id="password" type="password" class="w-full px-4 py-2 border rounded" required />
+      </div>
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-800 text-white py-2 px-6 rounded">Login</button>
+    </form>
+  </section>
+
+  <footer class="text-center py-6 mt-12 bg-blue-700 text-white">
+    DOCTORS HOSPITAL  | All rights reserved
+  </footer>
+</body>
+</html>
