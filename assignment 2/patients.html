@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Patients</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-blue-700 text-white p-4">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <h1 class="font-bold text-xl">Patients</h1>
+      <div class="flex gap-4 mt-2 md:mt-0">
+        <a href="dashboard.html" class="hover:underline">Dashboard</a>
+        <a href="contact.html" class="hover:underline">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="p-6 max-w-3xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-4 text-center">Add Patient</h2>
+    <form id="patient-form"  class="space-y-4 bg-white p-6 rounded shadow">
+      <input id="name" placeholder="Name" class="w-full p-2 border rounded" required />
+      <input id="age" type="number" placeholder="Age" class="w-full p-2 border rounded" required />
+      <input id="id" placeholder="Patient ID" class="w-full p-2 border rounded" required />
+      <input id="disease" placeholder="Disease" class="w-full p-2 border rounded" required />
+      <input id="number" placeholder="Phone Number" class="w-full p-2 border rounded" required />
+      <button type="submit" class="w-full bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Add Patient</button>
+    </form>
+
+    <h3 class="text-xl font-semibold mt-8 mb-4 text-center">All Patients</h3>
+    <div id="patient-list" class="space-y-2"></div>
+  </section>
+</body>
+</html>
